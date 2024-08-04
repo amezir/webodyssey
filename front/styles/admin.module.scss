@@ -1,0 +1,165 @@
+.container {
+  background-color: var(--dark);
+  width: 90%;
+  max-width: 1280px;
+  margin: 50px auto;
+  color: #fff;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 4rem;
+      margin-right: auto;
+      letter-spacing: 2px;
+    }
+
+    a,
+    button {
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .backHome {
+      background-color: var(--purple);
+    }
+
+    &Logout {
+      background-color: var(--red);
+
+
+    }
+  }
+
+  .bookingData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+
+      span {
+        font-size: 1rem !important;
+        color: var(--green);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .filters {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba($color: #fff, $alpha: 0.5);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .tab {
+      padding: 7px 15px;
+      color: #fff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      &.active {
+        background-color: #333;
+      }
+    }
+
+
+  }
+
+  .tableContainer {
+    position: relative;
+    margin-bottom: 2rem;
+    display: block;
+
+    table {
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-collapse: collapse;
+      margin-bottom: 50px;
+
+      tr,
+      th,
+      td {
+        padding: 5px;
+        text-align: left;
+
+        .validateButton {
+          display: flex;
+          gap: 5px;
+
+          .acceptedButton {
+            background-color: var(--green);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 50px;
+            color: var(--dark);
+            font-weight: 600;
+            cursor: pointer;
+          }
+
+          .deniedButton {
+            background-color: var(--red);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 50px;
+            color: var(--dark);
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+      
+    }
+
+    .waitingReservationTable {
+      display: none;
+    }
+
+
+
+
+    td {
+      border: 1px solid #333;
+      height: 4vh;
+    }
+
+    thead,
+    tfoot {
+      background-color: #333;
+      color: #fff;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #3333337c;
+    }
+  }
+}
