@@ -14,7 +14,7 @@ function InstagramPosts() {
                 target: "instafeed-container",
                 resolution: 'low_resolution',
                 limit: 3,
-                accessToken: 'IGQWROM1pTd3hzaXdTbGlaZAzBLVWtwaEpfYlRtZAWl3aUcxRk1sMlNYSVJSbFZAjMWVMby1XdG0zTGVDbHJROVFsTjRUY3FiMng1bGplWS1XekEzbVUySHRvU2lBQWUwM3BXTmJNTUdZAOUJUNzU0ZAUZAUdXRzNHNqa3MZD'
+                accessToken: 'EAALfZCHTZCxl4BO12simLEwsFvF6wBsp4OrHz2cvfYWvMRHeQxRYssRofJ8iuIJUacm4QGfAhzzCzQc7EM1PZAj26P5juP08aYtvu8z5swj7VQWwTn8FrmZCDZA9mxvuZBzGj0i4RibojVs7OgJOnm3z7FRb13hZAYfdZCEViNhu8ddZA4H2phMSl3yF5Emi8gZAwu8vIY0hyFO6guPV0CVjLXdZBB4FIpmgNCC01WCd5OWEVCc8Mn6o44CyC6bZCCUgn5igACMktz0ZD'
             });
             userFeed.run();
         };
