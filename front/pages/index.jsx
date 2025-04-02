@@ -428,18 +428,7 @@ export default function Home() {
 
           <div className={styles.headerbottom}>
             <div id="timer" className={styles.timer}>
-              <div className={styles.time}>
-                {timeLeft.days}
-                <span>J</span>
-              </div>
-              <div className={styles.time}>
-                {timeLeft.hours}
-                <span>H</span>
-              </div>
-              <div className={styles.time}>
-                {timeLeft.minutes}
-                <span>M</span>
-              </div>
+              <p className={styles.time}> c'est le jour J</p>
             </div>
           </div>
           <Image
