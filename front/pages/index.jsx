@@ -259,38 +259,38 @@ export default function Home() {
     }
   };
 
-  // useEffect(() => {
-  //   const inputs = document.querySelectorAll("input[required]");
-  //   inputs.forEach((input) => {
-  //     input.addEventListener("blur", function () {
-  //       const errorMessageId = `${this.id}-error`;
-  //       const errorMessage = document.getElementById(errorMessageId);
-  //       if (this.value.trim() === "") {
-  //         errorMessage.textContent = "Ce champ est obligatoire";
-  //       } else {
-  //         errorMessage.textContent = "";
-  //       }
-  //     });
-  //   });
+  useEffect(() => {
+    const inputs = document.querySelectorAll("input[required]");
+    inputs.forEach((input) => {
+      input.addEventListener("blur", function () {
+        const errorMessageId = `${this.id}-error`;
+        const errorMessage = document.getElementById(errorMessageId);
+        if (this.value.trim() === "") {
+          errorMessage.textContent = "Ce champ est obligatoire";
+        } else {
+          errorMessage.textContent = "";
+        }
+      });
+    });
 
-  //   const select = document.querySelector("select[required]");
-  //   select.addEventListener("blur", function () {
-  //     const errorMessageId = `${this.id}-error`;
-  //     const errorMessage = document.getElementById(errorMessageId);
-  //     if (this.value === "") {
-  //       errorMessage.textContent = "Ce champ est obligatoire";
-  //     } else {
-  //       errorMessage.textContent = "";
-  //     }
-  //   });
-  // }, []);
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   firstName: "",
-  //   promo: "",
-  //   mail: "",
-  //   accept: false,
-  // });
+    const select = document.querySelector("select[required]");
+    select.addEventListener("blur", function () {
+      const errorMessageId = `${this.id}-error`;
+      const errorMessage = document.getElementById(errorMessageId);
+      if (this.value === "") {
+        errorMessage.textContent = "Ce champ est obligatoire";
+      } else {
+        errorMessage.textContent = "";
+      }
+    });
+  }, []);
+  const [formData, setFormData] = useState({
+    name: "",
+    firstName: "",
+    promo: "",
+    mail: "",
+    accept: false,
+  });
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
