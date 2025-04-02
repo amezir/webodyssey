@@ -635,7 +635,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className={styles.reservation} id="reservation">
+        <div className={styles.reservation} id="reservation">
           <div
             className={styles.reservation_transition}
             id="reservation_transition"
@@ -859,7 +859,7 @@ export default function Home() {
               </form>
             </div>
           </div>
-        </div> */}
+        </div>
         <Footer />
       </div>
       <Analytics />
