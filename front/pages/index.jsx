@@ -265,10 +265,12 @@ export default function Home() {
       input.addEventListener("blur", function () {
         const errorMessageId = `${this.id}-error`;
         const errorMessage = document.getElementById(errorMessageId);
-        if (this.value.trim() === "") {
-          errorMessage.textContent = "Ce champ est obligatoire";
-        } else {
-          errorMessage.textContent = "";
+        if (errorMessage) {
+          if (this.value.trim() === "") {
+            errorMessage.textContent = "Ce champ est obligatoire";
+          } else {
+            errorMessage.textContent = "";
+          }
         }
       });
     });
@@ -277,13 +279,16 @@ export default function Home() {
     select.addEventListener("blur", function () {
       const errorMessageId = `${this.id}-error`;
       const errorMessage = document.getElementById(errorMessageId);
-      if (this.value === "") {
-        errorMessage.textContent = "Ce champ est obligatoire";
-      } else {
-        errorMessage.textContent = "";
+      if (errorMessage) {
+        if (this.value === "") {
+          errorMessage.textContent = "Ce champ est obligatoire";
+        } else {
+          errorMessage.textContent = "";
+        }
       }
     });
   }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     firstName: "",
