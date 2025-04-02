@@ -110,7 +110,7 @@ export default function Home() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const future = Date.parse("June 13, 2024 00:00:00");
+      const future = Date.parse("June 13, 2025 00:00:00");
       const now = new Date();
       const diff = future - now;
 
@@ -428,7 +428,18 @@ export default function Home() {
 
           <div className={styles.headerbottom}>
             <div id="timer" className={styles.timer}>
-              <p className={styles.time}>Merci à tous</p>
+              <div className={styles.time}>
+                {timeLeft.days}
+                <span>J</span>
+              </div>
+              <div className={styles.time}>
+                {timeLeft.hours}
+                <span>H</span>
+              </div>
+              <div className={styles.time}>
+                {timeLeft.minutes}
+                <span>M</span>
+              </div>
             </div>
           </div>
           <Image
