@@ -428,7 +428,7 @@ export default function Home() {
 
           <div className={styles.headerbottom}>
             <div id="timer" className={styles.timer}>
-              <p className={styles.time}> c'est le jour J</p>
+              <p className={styles.time}>Merci à tous</p>
             </div>
           </div>
           <Image
